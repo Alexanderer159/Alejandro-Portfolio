@@ -5,11 +5,11 @@ import { Footer } from "../components/Footer/Footer"
 export const Layout = () => {
     return (
         <>
+        <div style={{maxWidth: "100vw"}}>
             <Navbar />
-            <div className="p-3">
-                <Outlet />
-            </div>
-            {/* <Footer /> */}
+                <Outlet />  
+            <Footer />
+        </div>
         </>
     )
 }

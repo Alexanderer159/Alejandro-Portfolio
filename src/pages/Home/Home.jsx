@@ -3,13 +3,19 @@ import './Home.css'
 export const Home = () => {
   return (
     <>
-    <div className="container-fluid">
-      <div className="text-center justify-content-center">
-      <img src="./public/Foto CV.jpg" alt="pic" className="propic"/>
-      <p className="name">Alejandro De Yavorsky</p>
-      <p>Modern Problems require Modern Solutions.</p>
-      <p>Skyrocket your page with my talent!</p>
-      <p>I'm a Full-Stack developer with a love of design and styling! UI & UX is my passion!</p>
+    <div className="all py-5 ps-5 pe-0 ms-5">
+      <div className="justify-content-center">
+        <div className="d-flex align-items-center gap-5">
+          <img src="/Foto-CV.jpg" alt="pic" className="propic"/>
+          <div className="info p-5">
+            <p className="name m-0">Alejandro De Yavorsky</p>
+            <p className="devtext m-0">Full-Stack developer + Love for UI & UX = Amazing, eye-catching web-pages.</p>
+            <div className="d-flex gap-3 pt-4 mt-4">
+              <button className="buttonCV p-2">Download My CV</button>
+              <button className="buttonWA p-2">Whatsapp</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     </>
