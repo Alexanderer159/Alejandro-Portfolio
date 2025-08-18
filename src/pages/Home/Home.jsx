@@ -4,7 +4,7 @@ export const Home = () => {
   return (
     <>
     <div className="container-fluid">
-      <img src="" alt="pic"/>
+      <img src="./public/Foto CV.jpg" alt="pic" className="propic"/>
       <h1>Alejandro De Yavorsky</h1>
       <ul>
         <li>Projects</li>

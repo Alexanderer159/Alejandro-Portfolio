@@ -1,0 +1,10 @@
+body {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  background-color: #242424;
+}
+
+.propic{
+max-width: 300px;
+max-height: 300px;
+}
