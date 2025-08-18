@@ -1,0 +1,159 @@
+.navbar {
+  transform: translate(0px, -500px);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1030;
+  box-shadow: 2px 0px 15px 5px black;
+}
+
+.navbar-text {
+  font-size: 1.3rem;
+  background-clip: text;
+  background-size: 200%, 200%;
+  transition: 1s ease;
+  color: transparent;
+  animation: gradient-shift 5s infinite linear;
+  &:hover {
+    transition: 1.5s ease;
+    background-clip: text;
+    background-size: 200%, 200%;
+    color: transparent;
+    animation: gradient-shift 5s infinite linear;
+    font-size: x-large;
+  }
+}
+
+.navbar .soundstagram-icon {
+  transition: 1s ease;
+  height: 45px;
+  width: 50px;
+  &:hover {
+    transition: 1s ease;
+    height: 55px;
+    width: 65px;
+  }
+}
+
+.icon-navbar:hover {
+  font-size: 200%;
+  transition: 1s ease;
+  height: 35px;
+  width: 35px;
+}
+
+.search-navbar-icon-btn:hover{
+  font-size: 200%;
+  transition: 0.5s ease;
+  height: 35px;
+  width: 35px;
+}
+
+.search-navbar-icon{
+    background-size: 200%, 200%;
+    background-clip: text;
+    color: transparent;
+    font-size: 40px;
+    line-height: 0.25;
+    height: 25px;
+    width: 25px;
+    transition: 0.5s ease;
+}
+
+.bell-navbar-icon{
+    background-size: 200%, 200%;
+    background-clip: text;
+    color: transparent;
+    font-size: 21px;
+    line-height: 1;
+    height: 25px;
+    width: 25px;
+    transition: 1s ease;
+}
+
+.user-navbar-icon{
+    background-size: 200%, 200%;
+    background-clip: text;
+    color: transparent;
+    font-size: 22px;
+    line-height: 1;
+    height: 25px;
+    width: 25px;
+    transition: 1s ease;
+}
+
+.search-function:hover .search-navbar-bar {
+  width: 500px;
+  opacity: 1;
+  transition: 1.5s ease;
+}
+
+.search-navbar-bar {
+  border-radius: 30px;
+  background: transparent;
+  opacity: 0;
+  max-height: 25px;
+  width: 0px;
+  transition: 0.75s 3s ease;
+  color: #fff;
+  text-shadow: 5px 5px 5px black;
+  box-shadow: 5px 5px 2px 2px black;
+}
+
+
+.search-navbar-bar::placeholder {
+  color: #fff;
+  text-shadow: 5px 5px 5px black;
+}
+
+.dropdown-menu {
+  pointer-events: none;
+  transform: translateX(10%);
+  box-shadow: 10px 10px 20px 1px black;
+}
+
+.profile {
+  pointer-events: all;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.profile:hover .dropdown-menu,
+.profile .dropdown-menu:hover {
+  animation: slideleft 2s forwards;
+  pointer-events: all;
+}
+
+.profile:not(:hover):not(.dropdown-menu:hover) .dropdown-menu {
+  animation: slideright 2s 2s forwards;
+}
+
+.dropdown-menu .dropdown-item {
+  background-clip: text;
+  background-size: 200%, 200%;
+  transition: 1s ease;
+  font-size: large;
+  color: transparent;
+  &:hover {
+    transition: 1.5s ease;
+    background-clip: text;
+    background-size: 200%, 200%;
+    color: transparent;
+    font-size: x-large;
+  }
+}
+
+.dropdown-item-red {
+  border: 0;
+  background-clip: text;
+  background-size: 200%, 200%;
+  transition: 1s ease;
+  font-size: large;
+  color: transparent;
+  &:hover {
+    transition: 1.5s ease;
+    background-clip: text;
+    background-size: 200%, 200%;
+    color: transparent;
+    font-size: x-large;
+  }
+}

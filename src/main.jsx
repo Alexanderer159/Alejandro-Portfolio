@@ -1,5 +1,16 @@
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import { Home } from './Home.jsx'
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import { RouterProvider } from "react-router-dom";  
+import { router } from "./routes";  
 
-createRoot(document.getElementById('root')).render(<Home />)
+const Main = () => {
+
+    return (
+        <React.StrictMode>
+            <RouterProvider router={router}>
+            </RouterProvider>
+        </React.StrictMode >
+    );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<Main />)
