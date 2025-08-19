@@ -14,20 +14,20 @@ body {
 }
 
 .propic{
-max-width: 500px;
-max-height: 500px;
+max-width: 600px;
+max-height: 600px;
 border-radius: 50px;
 box-shadow: 10px 10px 10px 5px black;
 }
 
 .name{
-  font-size: 5em;
+  font-size: 6em;
   flex-grow: 1;
   text-shadow: 5px 5px 2px black;
 }
 
 .devtext{
-  font-size: 1.1em;
+  font-size: 1.3em;
   text-shadow: 5px 2px 2px black;
 }
 
@@ -36,10 +36,10 @@ background-color: transparent;
 color: white;
 border: 2px solid gray;
 border-radius: 5px;
-font-size: 1.1em;
+font-size: 1.2em;
 transition: 1s ease;
 &:hover {
-  font-size: 1.5em;
+  font-size: 1.6em;
   transition: 1s ease;
 }
 }
@@ -49,10 +49,29 @@ background-color: green;
 color: white;
 border: 0px;
 border-radius: 5px;
-font-size: 1.1em;
+font-size: 1.2em;
 transition: 1s ease;
 &:hover {
-  font-size: 1.5em;
+  font-size: 1.6em;
   transition: 1s ease;
 }
+}
+
+.arrow {
+  box-sizing: border-box;
+  height: 7vw;
+  width: 7vw;
+  border-style: solid;
+  border-color: gray;
+  border-width: 0px 2px 2px 0px;
+  transform: rotate(45deg);
+  transition: 250ms ease-in-out;
+&:hover {
+border-width: 0px 5px 5px 0px;
+border-radius: 5px;
+border-color: white;
+}}
+
+.protitle{
+  font-size: 10em;
 }

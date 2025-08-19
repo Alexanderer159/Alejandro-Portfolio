@@ -1,6 +1,7 @@
 .footer {
   box-shadow: 0px 0px 15px 5px black;
-  position: absolute;
+  background-color: rgb(36, 36, 36);
+  position: fixed;
   width: 100vw;
   bottom: 0;
 }
