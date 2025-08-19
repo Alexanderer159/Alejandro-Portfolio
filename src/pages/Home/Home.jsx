@@ -3,9 +3,8 @@ import './Home.css'
 export const Home = () => {
   return (
     <>
-    <div className="all py-5 ps-5 pe-0 ms-5">
-      <div className="justify-content-center">
-        <div className="d-flex align-items-center gap-5">
+    <div className="all py-5">
+      <div className="d-flex justify-content-center align-items-center gap-5">
           <img src="/Foto-CV.jpg" alt="pic" className="propic"/>
           <div className="info p-5">
             <p className="name m-0">Alejandro De Yavorsky</p>
@@ -14,7 +13,6 @@ export const Home = () => {
               <button className="buttonCV p-2">Download My CV</button>
               <button className="buttonWA p-2">Whatsapp</button>
             </div>
-          </div>
         </div>
       </div>
       <div className="d-flex justify-content-center">
@@ -23,7 +21,26 @@ export const Home = () => {
         </a>
       </div>
 <div id="projects" className="d-flex justify-content-center mt-5 pt-5">
-  <p className="protitle">Projects</p>
+  <div>
+<p className="protitle">Projects</p>
+<p>Soundstagram!</p>
+  </div>
+</div>
+<div id="testimonials" className="d-flex justify-content-center mt-5 pt-5">
+  <div>
+    <p className="protitle">Testimonials</p>
+    <p>Hans</p>
+  </div>
+</div>
+<div id="contact" className="d-flex justify-content-center mt-5 pt-5">
+    <div>
+    <p className="protitle">Contact Info</p>
+    <p>Linked-In</p>
+    <p>GitHub</p>
+    <p>Mail</p>
+    <p>Phone</p>
+    <p>Whatsapp</p>
+  </div>
 </div>
     </div>
     </>

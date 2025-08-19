@@ -6,27 +6,17 @@
   bottom: 0;
 }
 
-.footer .foot-list {
+.foot-list {
   background-clip: text;
+  cursor: pointer;
   background-size: 200%, 200%;
   transition: 1s ease;
-  color: transparent;
   margin-bottom: 0;
   &:hover{
   transition: 1s ease;
   background-clip: text;
   background-size: 200%, 200%;
-  color: transparent;
   font-size: x-large;
 }
 }
 
-.footer .team {
-  font-size: 1.7rem;
-  background-clip: text;
-  background-size: 200%, 200%;
-  transition: 1s ease;
-  color: transparent;
-  pointer-events: none;
-  user-select: none;
-}
