@@ -5,11 +5,16 @@ body {
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .shadow5{
   box-shadow: 10px 10px 10px 5px black;
+}
+
+.top {
+  box-shadow: 0px 100px 150px 1px black;
+  border-bottom: 30px solid rgb(17, 17, 17);
 }
 
 .info{
@@ -17,10 +22,10 @@ a {
 }
 
 .propic{
-max-width: 600px;
-max-height: 600px;
-border-radius: 25px;
-box-shadow: 10px 10px 10px 5px black;
+  max-width: 600px;
+  max-height: 600px;
+  border-radius: 25px;
+  box-shadow: 10px 10px 10px 5px black;
 }
 
 .name{
@@ -34,12 +39,12 @@ box-shadow: 10px 10px 10px 5px black;
 }
 
 .buttonCV{
-background-color: transparent;
-color: white;
-border: 2px solid gray;
-border-radius: 5px;
-font-size: 1.2em;
-transition: 1s ease;
+  background-color: transparent;
+  color: white;
+  border: 2px solid gray;
+  border-radius: 5px;
+  font-size: 1.2em;
+  transition: 1s ease;
 &:hover {
   font-size: 1.6em;
   transition: 1s ease;
@@ -47,36 +52,47 @@ transition: 1s ease;
 }
 
 .buttonWA{
-background-color: rgb(37, 211, 102);
-fill: white;
-color: white;
-border: 0px;
-border-radius: 5px;
-font-size: 1.2em;
-transition: 1s ease;
+  background-color: rgb(37, 211, 102);
+  fill: white;
+  color: white;
+  border: 0px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  transition: 1s ease;
 &:hover {
   font-size: 1.6em;
   transition: 1s ease;
 }
 }
 
+.slide-text{
+  font-size: 2em;
+  text-shadow: 4px 2px 2px black;
+}
+
 .arrow {
+  animation: arrowAppears 4s 1 forwards, arrowBumps 2s 4s infinite alternate;
   box-sizing: border-box;
   height: 7vw;
   width: 7vw;
+  opacity: 0;
   border-style: solid;
   border-color: gray;
-  border-width: 0px 2px 2px 0px;
-  transform: rotate(45deg);
-  transition: 250ms ease-in-out;
+  border-width: 0px 5px 5px 0px;
+  transition: 1s ease;
 &:hover {
-border-width: 0px 5px 5px 0px;
-border-radius: 5px;
-border-color: white;
+  animation: none;
+  opacity: 1;
+  border-width: 0px 2px 2px 0px;
+  transition: 1s ease;
+  transform: rotate(45deg);
+  border-radius: 5px;
+  border-color: white;
+  cursor: pointer;
 }}
 
 .animated {
-  animation: autoShow 1s ease forwards;
+  animation: autoShow ease forwards;
   animation-timeline: view(-250%);
 }
 
@@ -100,4 +116,60 @@ border-color: white;
     opacity: 0;
     transform: translateY(-200px) scale(0.3);
   }
+}
+
+@keyframes arrowAppears{
+    0%{
+    opacity: 0;
+    transform: translateY(-250px) rotate(270deg);
+    user-select: none;
+    pointer-events: none;
+    }
+
+    25%{
+    opacity: 1;
+    transform: translateY(-50px) rotate(45deg);
+    user-select: none;
+    pointer-events: none;
+    }
+
+    50%{
+    opacity: 1;
+    transform: translateY(0px) rotate(45deg);
+    border-width: 0px 2px 2px 0px;
+    border-radius: 5px;
+    border-color: white;
+    user-select: none;
+    pointer-events: none;
+    }
+
+    75%{
+    opacity: 1;
+    transform: translateY(-50px) rotate(45deg);
+    border-color: gray;
+    border-width: 0px 5px 5px 0px;
+    border-radius: 0px;
+    user-select: none;
+    pointer-events: none;
+    }
+
+    100%{
+    opacity: 1;
+    transform: translateY(-50px) rotate(45deg);
+    }
+}
+
+@keyframes arrowBumps {
+      0%{
+    opacity: 1;
+    transform: translateY(-50px) rotate(45deg);
+    }
+      100%{
+    opacity: 1;
+    transform: translateY(0px) rotate(45deg);
+    border-width: 0px 2px 2px 0px;
+    border-radius: 5px;
+    border-color: white;
+    }
+
 }
