@@ -1,0 +1,35 @@
+.card-container {
+    perspective: 500px;
+    cursor: pointer;
+}
+
+.card {
+    transition: 1s ease;
+    background-color: rgb(36, 36, 36);
+    transform-style: preserve-3d;
+    width: 450px;
+    height: 600px;
+    border-radius: 25px;
+     box-shadow: 10px 10px 10px 5px black;
+}
+
+.card:hover {
+    transform: rotateY( 180deg );
+    transition: 1s ease;
+}
+
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+}
+
+.back {
+    transform: rotateY( 180deg );
+}
+
+.card img {
+  max-width: 600px;
+  max-height: 600px;
+  border-radius: 25px;
+}

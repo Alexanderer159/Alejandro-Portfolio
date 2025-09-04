@@ -1,5 +1,6 @@
 import './Home.css';
 import { Slider } from '../../components/Slider/Slider.jsx';
+import { Card } from '../../components/Card/Card.jsx';
 
 export const Home = () => {
   return (
@@ -9,7 +10,7 @@ export const Home = () => {
       <div className="top">
         <div className="d-flex justify-content-center align-items-center gap-5 animated">
 
-            <img src="/Foto-CV.jpg" alt="pic" className="propic"/>
+          <Card />
 
             <div className="info p-5">
               <p className="name m-0">Alejandro De Yavorsky</p>

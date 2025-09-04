@@ -21,13 +21,6 @@ a {
   border-left: 2px solid gray;
 }
 
-.propic{
-  max-width: 600px;
-  max-height: 600px;
-  border-radius: 25px;
-  box-shadow: 10px 10px 10px 5px black;
-}
-
 .name{
   font-size: 6em;
   flex-grow: 1;
@@ -80,16 +73,7 @@ a {
   border-color: gray;
   border-width: 0px 5px 5px 0px;
   transition: 1s ease;
-&:hover {
-  animation: none;
-  opacity: 1;
-  border-width: 0px 2px 2px 0px;
-  transition: 1s ease;
-  transform: rotate(45deg);
-  border-radius: 5px;
-  border-color: white;
-  cursor: pointer;
-}}
+}
 
 .animated {
   animation: autoShow ease forwards;

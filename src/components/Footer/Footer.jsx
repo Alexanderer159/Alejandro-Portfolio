@@ -6,7 +6,8 @@ export const Footer = () => (
 		<div className="col d-flex align-items-end">
 			<p className="text-start p-0 m-0">© 2025 Alejandro Dev. All Rights Reserved.</p>
 		</div>
-		<div className="col d-flex align-items-end gap-5">
+		<div className="col d-flex justify-content-end align-content-center gap-5">
+			<p className="m-0">Thanks to Codepen for all the help!</p>
 		</div>
 	</div>
 );
