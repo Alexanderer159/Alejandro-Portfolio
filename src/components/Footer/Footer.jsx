@@ -10,7 +10,7 @@ export const Footer = () => (
 		</div>
 		<div className="col ">
 			<div className="d-flex flex-row justify-content-end">
-				<p className="foot-list">About me</p>
+				<p className="foot-list">Skill-Set</p>
 			</div>
 		</div>
 	</div>

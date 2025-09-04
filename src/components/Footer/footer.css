@@ -9,6 +9,7 @@
 .foot-list {
   background-clip: text;
   cursor: pointer;
+  font-size: 1.5em;
   background-size: 200%, 200%;
   transition: 1s ease;
   margin-bottom: 0;
@@ -16,7 +17,7 @@
   transition: 1s ease;
   background-clip: text;
   background-size: 200%, 200%;
-  font-size: x-large;
+  font-size: 2em;
 }
 }
 

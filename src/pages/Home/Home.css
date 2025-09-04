@@ -4,6 +4,10 @@ body {
   background-color: rgb(36, 36, 36);
 }
 
+a {
+    text-decoration: none;
+}
+
 .shadow5{
   box-shadow: 10px 10px 10px 5px black;
 }
@@ -15,7 +19,7 @@ body {
 .propic{
 max-width: 600px;
 max-height: 600px;
-border-radius: 50px;
+border-radius: 25px;
 box-shadow: 10px 10px 10px 5px black;
 }
 
@@ -27,7 +31,6 @@ box-shadow: 10px 10px 10px 5px black;
 
 .devtext{
   font-size: 1.3em;
-  text-shadow: 5px 2px 2px black;
 }
 
 .buttonCV{
@@ -44,7 +47,8 @@ transition: 1s ease;
 }
 
 .buttonWA{
-background-color: green;
+background-color: rgb(37, 211, 102);
+fill: white;
 color: white;
 border: 0px;
 border-radius: 5px;
@@ -71,6 +75,29 @@ border-radius: 5px;
 border-color: white;
 }}
 
+.animated {
+  animation: autoShow 1s ease forwards;
+  animation-timeline: view(-250%);
+}
+
 .protitle{
   font-size: 10em;
+}
+
+/* Frames */
+
+@keyframes autoShow{
+  0%{
+    opacity: 0;
+    transform: translateY(200px) scale(0.3);
+  }
+
+  50%{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(-200px) scale(0.3);
+  }
 }
