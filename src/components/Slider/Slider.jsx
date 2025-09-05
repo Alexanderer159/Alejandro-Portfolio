@@ -63,6 +63,10 @@ export const Slider = () => {
 		</div>
 
         <div className="slide">
+            <a href="https://jestjs.io/"><img src="Jest.png"/></a>
+		</div>
+
+        <div className="slide">
             <a href="http://developer.mozilla.org/en-US/docs/Glossary/HTML5"><img src="HTML5.png"/></a>
 		</div>
 
@@ -116,6 +120,10 @@ export const Slider = () => {
 
         <div className="slide">
             <a href="https://www.postman.com/"><img src="Postman.png"/></a>
+		</div>
+
+        <div className="slide">
+            <a href="https://jestjs.io/"><img src="Jest.png"/></a>
 		</div>
 
 	</div>

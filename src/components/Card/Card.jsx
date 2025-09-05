@@ -12,7 +12,13 @@ export const Card = () => (
         <img src="Foto-CV.jpg"/>
       </div>
 
-      <div className="back d-flex align-items-center justify-content-center">
+      <div className="back d-flex flex-column align-items-center justify-content-between">
+        <p className="text-white">BLA BLA BLA</p>
+        <p className="text-white">BLA BLA BLA</p>
+        <p className="text-white">BLA BLA BLA</p>
+        <p className="text-white">BLA BLA BLA</p>
+        <p className="text-white">BLA BLA BLA</p>
+        <p className="text-white">BLA BLA BLA</p>
         <p className="text-white">BLA BLA BLA</p>
       </div>
 

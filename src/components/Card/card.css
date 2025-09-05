@@ -10,10 +10,10 @@
     width: 450px;
     height: 600px;
     border-radius: 25px;
-     box-shadow: 10px 10px 10px 5px black;
+    box-shadow: 10px 10px 10px 5px black;
 }
 
-.card:hover {
+.cards-container:hover .card{
     transform: rotateY( 180deg );
     transition: 1s ease;
 }
@@ -21,7 +21,6 @@
 .front, .back {
     backface-visibility: hidden;
     position: absolute;
-    width: 100%;
 }
 
 .back {
