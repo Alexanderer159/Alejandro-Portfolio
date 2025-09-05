@@ -17,7 +17,7 @@ export const Home = () => {
 
               <p className="name m-0">Alejandro De Yavorsky</p>
 
-              <p className="devtext m-0">Full-Stack developer + Love for UI & UX = Amazing web-pages.</p>
+              <p className="devtext m-0">Full-Stack developer + Love for UI & UX = <strong className="emphasis">Amazing web-pages.</strong></p>
 
               <div className="d-flex gap-3 pt-4 mt-4">
 
@@ -84,19 +84,8 @@ export const Home = () => {
 
           <p className="protitle">Recent Projects</p>
 
-          <div className="Proj1">
+          <Carousel />
 
-            <p>Soundstagram!</p>
-
-            <div className="carousel-container d-flex align-items-center justify-content-center">
-
-            <Carousel />
-
-            </div>
-            
-
-          </div>
-          
         </div>
 
         <div className="animated d-flex flex-column justify-content-center align-items-center" id="testimonials">
