@@ -57,9 +57,9 @@ export const Home = () => {
 
 <div id="middle"></div>
 
-      <div className="d-flex flex-column justify-content-between gap-5">
+      <div className="d-flex flex-column justify-content-between">
 
-        <div className="bio animated">
+        <div className="bio animated py-3">
           
           <p className="protitle">Who am I? What am I?</p>
 
@@ -80,7 +80,9 @@ export const Home = () => {
           
         </div>
         
-        <div className="animated d-flex flex-column justify-content-center align-items-center" id="projects">
+        <div id="projects"></div>
+
+        <div className="animated d-flex flex-column justify-content-center align-items-center">
 
           <p className="protitle">Recent Projects</p>
 
@@ -88,7 +90,9 @@ export const Home = () => {
 
         </div>
 
-        <div className="animated d-flex flex-column justify-content-center align-items-center" id="testimonials">
+        <div id="testimonials"></div>
+
+        <div className="animated d-flex flex-column justify-content-center align-items-center">
 
           <p className="protitle">Testimonials</p>
 
@@ -97,7 +101,9 @@ export const Home = () => {
         
         </div>
 
-        <div className="animated d-flex flex-column justify-content-center align-items-center" id="contact">
+        <div id="contact"></div>
+
+        <div className="animated d-flex flex-column justify-content-center align-items-center">
           
             <p className="protitle">Contact Info</p>
 
