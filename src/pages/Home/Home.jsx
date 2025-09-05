@@ -15,7 +15,7 @@ export const Home = () => {
 
           <div className="info p-5">
 
-              <p className="name m-0">Alejandro De Yavorskys</p>
+              <p className="name m-0">Alejandro De Yavorsky</p>
 
               <p className="devtext m-0">Full-Stack developer + Love for UI & UX = <strong className="emphasis">Amazing web-pages.</strong></p>
 
