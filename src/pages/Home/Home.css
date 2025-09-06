@@ -18,6 +18,8 @@ a {
   box-shadow: 0px 100px 150px 1px black;
   border-bottom: 30px solid rgb(17, 17, 17);
   animation-timeline: view(0% 80%);
+  height: 100dvh;
+  width: 100dvw;
 }
 
 .info{
@@ -86,6 +88,14 @@ a {
 
 .protitle{
   font-size: 10em;
+  margin: 0;
+  padding: 0;
+  text-shadow: 5px 5px 2px black;
+}
+
+.bio{
+  width: 100dvw;
+  height: 100dvh
 }
 
 .bio-text{
@@ -100,12 +110,18 @@ a {
   color: transparent;
 }
 
-.bio-pic{
+.bio-vid{
+  object-fit: fill;
   max-width: 600px;
   max-height: 600px;
   border: 0px;
   border-radius: 20px;
   box-shadow: 5px 5px 10px 1px black;
+}
+
+.services{
+  height: 100dvh;
+  width: 100dvw
 }
 
 .contact-button{

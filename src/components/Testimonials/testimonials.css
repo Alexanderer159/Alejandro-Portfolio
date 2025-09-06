@@ -1,0 +1,37 @@
+.testi-container{
+    height: 100dvh;
+    width: 100dvw;
+}
+
+.testi-card{
+    width: 400px;
+    box-shadow: 4px 4px 10px 1px black;
+    border-radius: 15px;
+}
+
+.testi-pic{
+    object-fit: contain;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.testi-name{
+    font-size: 1.5em;
+}
+
+.testi-text{
+    font-size: 1em;
+}
+
+.testi-link{
+    border: 0.5px solid white;
+    border-radius: 7px;
+    font-size: 1em;
+    transition: 1s ease;
+&:hover{
+    font-size: 1.2em;
+    transition: 1s ease;
+}
+
+}

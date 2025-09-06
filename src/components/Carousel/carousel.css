@@ -1,3 +1,8 @@
+.carousel-top-container{
+  height: 100dvh;
+  width: 100dvw;
+}
+
 .card-title{
   font-size: 4em;
   background: linear-gradient(90deg, rgb(13, 202, 240),  rgb(0, 255, 136), rgb(13, 202, 240));
@@ -28,7 +33,7 @@
   max-height: 600px;
   border-radius: 15px;
   object-fit: contain;
-  box-shadow: 2px 2px 7px 1.5px black;
+  box-shadow: 4px 4px 10px 1px black;
 }
 
 #photo-1:checked ~ .cards #pic-3, #photo-2:checked ~ .cards #pic-1, #photo-3:checked ~ .cards #pic-2 {
@@ -56,5 +61,8 @@
 &:hover{
   font-size: 3.2em;
   transition: 1s ease;
+  color: transparent;
+  background: linear-gradient(90deg, rgb(13, 202, 240),  rgb(0, 255, 136), rgb(13, 202, 240));
+  background-clip: text;
 }
 }
