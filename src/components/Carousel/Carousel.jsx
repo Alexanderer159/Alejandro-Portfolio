@@ -24,7 +24,10 @@ export const Carousel = () => (
             </div>
         </div>
 
-        <p className="learn-more py-5">Learn More!</p>
+        <a href="https://github.com/Alexanderer159/Soundstagram" target="_blank" className="my-5">
+            <p className="learn-more">Learn More!</p>
+        </a>
+        
 
     </div>
 </>

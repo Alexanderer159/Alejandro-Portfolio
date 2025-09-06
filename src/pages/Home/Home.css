@@ -108,6 +108,22 @@ a {
   box-shadow: 5px 5px 10px 1px black;
 }
 
+.contact-button{
+  background: transparent;
+  border: 0;
+  color: white;
+  height: 100px;
+  width: 100px;
+  transition: 1s ease;
+  &:hover{
+  transition: 1s ease;
+  height: 120px;
+  width: 120px;
+}
+}
+
+
+
 /* Frames */
 
 @keyframes autoShow{

@@ -51,4 +51,10 @@
 
 .learn-more{
   font-size: 3em;
+  color: white;
+  transition: 1s ease;
+&:hover{
+  font-size: 3.2em;
+  transition: 1s ease;
+}
 }
