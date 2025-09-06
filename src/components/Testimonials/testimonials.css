@@ -14,10 +14,23 @@
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    box-shadow: 2px 2px 2px 2px black;
+    transition: 1s ease;
+&:hover{
+    width: 200px;
+    height:200px;
+    transition: 1s ease;
+}
 }
 
 .testi-name{
     font-size: 1.5em;
+}
+
+.testi-jobtitle{
+    font-size: 0.9em;
 }
 
 .testi-text{
