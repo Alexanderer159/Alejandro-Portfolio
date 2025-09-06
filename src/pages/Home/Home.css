@@ -147,8 +147,6 @@ a {
     border-width: 0px 2px 2px 0px;
     border-radius: 5px;
     border-color: white;
-    user-select: none;
-    pointer-events: none;
     }
 
   75%{
@@ -157,8 +155,6 @@ a {
     border-color: gray;
     border-width: 0px 5px 5px 0px;
     border-radius: 0px;
-    user-select: none;
-    pointer-events: none;
     }
 
   100%{
