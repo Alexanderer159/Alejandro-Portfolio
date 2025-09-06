@@ -3,6 +3,7 @@ import { Slider } from '../../components/Slider/Slider.jsx';
 import { Card } from '../../components/Card/Card.jsx';
 import { Carousel } from '../../components/Carousel/Carousel.jsx';
 import { Testimonials } from '../../components/Testimonials/Testimonials.jsx';
+import { Sidebar } from '../../components/Sidebar/Sidebar.jsx';
 
 export const Home = () => {
   return (
@@ -58,11 +59,13 @@ export const Home = () => {
 
 <div id="middle"></div>
 
+    <Sidebar />
+
       <div className="d-flex flex-column justify-content-between">
 
         <div className="bio animated py-3">
           
-          <p className="protitle">Who am I? What am I?</p>
+          <p className="who-what protitle ms-5"></p>
 
           <div className="d-flex justify-content-between px-5">
             <div className="d-flex justify-content-center align-items-center">
@@ -81,7 +84,7 @@ export const Home = () => {
           
         </div>
 
-        <div className="services">
+        <div className="services" id="services">
 
           <p className="protitle">What can i do for you?</p>
 

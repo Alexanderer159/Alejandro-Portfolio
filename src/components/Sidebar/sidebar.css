@@ -1,0 +1,25 @@
+.sidebar{
+    z-index: 1230;
+    position: sticky;
+    background: transparent;
+    top: 40%;
+    animation: slideLeft ease forwards;
+    animation-timeline: view(0% -50%);
+}
+
+.jump{
+    margin-top: 15px;
+    color: white;
+    font-size: 1.5em;
+    transition: 1s ease;
+    text-shadow: 2px 2px 1px black;
+&:hover{
+    font-size: 1.8em;
+    transition: 1s ease;
+}
+}
+
+@keyframes slideLeft {
+    0%{transform: translateX(0px);}
+    100%{transform: translateX(0px);}
+}
