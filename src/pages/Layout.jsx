@@ -1,13 +1,17 @@
 import { Outlet } from "react-router-dom"
 import { Navbar } from "../components/Navbar/Navbar"
 import { Footer } from "../components/Footer/Footer"
+import { Sidebar } from "../components/Sidebar/Sidebar"
 
 export const Layout = () => {
     return (
         <>
-        <div style={{maxWidth: "100vw"}}>
+        <div style={{maxWidth: "100dvw"}}>
             <Navbar />
-                <Outlet />  
+                <div className="d-flex">
+                    <Sidebar />
+                    <Outlet />
+                </div>
             <Footer />
         </div>
         </>
