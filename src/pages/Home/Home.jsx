@@ -61,7 +61,7 @@ export const Home = () => {
 
       <div className="d-flex flex-column justify-content-between">
 
-        <div className="bio animated py-3">
+        <div className="z-1 bio animated py-3">
           
           <p className="who-what protitle ms-5 ps-5"></p>
 

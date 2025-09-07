@@ -8,9 +8,9 @@ export const Layout = () => {
         <>
         <div style={{maxWidth: "100dvw"}}>
             <Navbar />
-                <div className="d-flex">
-                    <Sidebar />
+                <div className="d-flex flex-row">
                     <Outlet />
+                    <Sidebar />
                 </div>
             <Footer />
         </div>

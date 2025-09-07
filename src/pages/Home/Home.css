@@ -131,6 +131,7 @@ a {
 }
 
 .bio-vid{
+  z-index: 1;
   object-fit: fill;
   max-width: 600px;
   max-height: 600px;

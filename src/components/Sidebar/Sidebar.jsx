@@ -5,7 +5,7 @@ export const Sidebar = () => {
 	return (
 <>
 
-    <div className="sidebar d-flex flex-column justify-content-between align-items-start ms-5 ">
+    <div className="sidebar d-flex flex-column align-items-end w-100">
 
         <a className="jump" href="#middle">Bio</a>
         <a className="jump" href="#services">Services</a>
