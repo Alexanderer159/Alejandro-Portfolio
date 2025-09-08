@@ -11,6 +11,7 @@ export const Navbar = () => {
 					</div>
 
 				<div className="actions gap-4 justify-content-between d-flex flex-row me-5 my-0 align-items-center">
+					<a className="navbar-text m-0" data-scroll href="#services">Services</a>
 					<a className="navbar-text m-0" data-scroll href="#projects">Projects</a>
 					<a className="navbar-text m-0" data-scroll href="#testimonials">Testimonials</a>
 					<a className="navbar-text m-0" data-scroll href="#contact">Contact information</a>

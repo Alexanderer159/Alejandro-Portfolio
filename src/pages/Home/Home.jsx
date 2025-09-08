@@ -10,10 +10,10 @@ import { Contact } from '../../components/Contact/Contact.jsx';
 export const Home = () => {
   return (
   <>
-    <div className="portfolio-container">
+    <div className="portfolio-container py-5">
       
       <div className="top">
-        <div className="d-flex justify-content-center align-items-center gap-5 animated pt-3">
+        <div className="d-flex justify-content-center align-items-center gap-5 animated">
 
           <Card />
 
@@ -21,7 +21,10 @@ export const Home = () => {
 
               <p className="name m-0">Alejandro De Yavorsky</p>
 
-              <p className="devtext m-0">Full-Stack developer + Love for UI & UX = <strong className="emphasis">Amazing web-pages.</strong></p>
+              <div className="devtext-container">
+                <p className="devtext m-0">Full-Stack developer + Love for UI & UX = <strong className="emphasis">Amazing web-pages.</strong></p>
+              </div>
+              
 
               <div className="d-flex gap-3 pt-4 mt-4">
 
@@ -48,24 +51,25 @@ export const Home = () => {
         </div>
 
         <div className="d-flex justify-content-center animated">
-          <a data-scroll href="#segments" className="arrow">
+          <a data-scroll href="#bio" className="arrow">
           </a>
         </div>
       </div>
 
-      <div className="segment-list d-flex flex-column justify-content-between" id="segments">
-                
+      <div id="bio"></div>              
         <Bio />
 
+      <div id="services"></div>   
         <Services />
-        
+
+        <div id="projects"></div>         
         <Projects />
 
+      <div id="testimonials"></div>   
         <Testimonials />
 
+      <div id="contact"></div>   
         <Contact />
-
-      </div>
 
     </div>
   </>

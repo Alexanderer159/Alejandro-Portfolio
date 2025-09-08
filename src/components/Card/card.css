@@ -10,7 +10,7 @@
     width: 450px;
     height: 600px;
     border-radius: 25px;
-    box-shadow: 10px 10px 10px 5px black;
+    box-shadow: 5px 5px 5px 1px black;
 }
 
 .cards-container:hover .card{
@@ -31,4 +31,8 @@
   max-width: 600px;
   max-height: 600px;
   border-radius: 25px;
+}
+
+.card-back-text{
+    color: white;
 }

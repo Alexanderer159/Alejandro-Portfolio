@@ -5,7 +5,7 @@ export const Testimonials = () => {
   	return (
     <>
 
-        <div className="testi-container d-flex flex-column align-items-center justify-content-center animated pb-5">
+        <div className="testi-container d-flex flex-column align-items-center animated pb-5">
 
             <p className="protitle text-center">Testimonials</p>
 

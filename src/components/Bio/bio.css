@@ -18,10 +18,8 @@
   object-fit: fill;
   max-width: 600px;
   max-height: 600px;
-  border-top: 0.1px solid gray;
-  border-left: 0.1px solid gray;
   border-radius: 20px;
-  box-shadow: 3px 3px 1px 1px black;
+  box-shadow: 5px 5px 5px 1px black;
 }
 
 /* Frames */

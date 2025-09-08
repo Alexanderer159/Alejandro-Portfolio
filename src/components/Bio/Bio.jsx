@@ -4,7 +4,7 @@ export const Bio = () => {
 
 	return (
 <>
-        <div className="z-1 bio animated py-3">
+        <div className="bio animated">
           
           <p className="who-what protitle ms-5 ps-5"><strong className="emphasis">What </strong> am I?</p>
 

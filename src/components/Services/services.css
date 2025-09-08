@@ -1,4 +1,22 @@
-.services-container{
-  height: 100dvh;
+.services-top-container{
   width: 100dvw;
+  height: 100dvh;
+}
+
+.service-card-group{
+  width: 100dvw;
+  height:100dvh;
+}
+
+.service-card{
+  width: 100dvw;
+}
+
+.inside-service-card{
+  font-size: 3em;
+}
+
+.inside-service-card svg{
+  max-width: 250px;
+  max-height: 250px;
 }

@@ -13,13 +13,7 @@ export const Card = () => (
       </div>
 
       <div className="back d-flex flex-column align-items-center justify-content-between">
-        <p className="text-white">BLA BLA BLA</p>
-        <p className="text-white">BLA BLA BLA</p>
-        <p className="text-white">BLA BLA BLA</p>
-        <p className="text-white">BLA BLA BLA</p>
-        <p className="text-white">BLA BLA BLA</p>
-        <p className="text-white">BLA BLA BLA</p>
-        <p className="text-white">BLA BLA BLA</p>
+        <p className="card-back-text">Soft Skills:</p>
       </div>
 
     </div>
