@@ -3,6 +3,10 @@ import './slider.css'
 export const Slider = () => {  
   
   	return (
+<>
+<div className="pt-5">
+<p className="slide-text text-center">ToolSet</p>
+
   <div className="slider overflow-hidden">
 	<div className="slide-track d-flex">
 
@@ -127,5 +131,8 @@ export const Slider = () => {
 		</div>
 
 	</div>
-</div>);
+</div>
+</div>
+</>
+);
 };

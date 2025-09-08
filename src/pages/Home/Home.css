@@ -1,6 +1,5 @@
 body {
   font-family: 'DM Sans', sans-serif;
-  scroll-behavior: smooth;
   color: rgb(255, 255, 255);
   background-color: rgb(30,30,30);
 }
@@ -16,12 +15,14 @@ a {
 }
 
 .top {
+  background: rgb(30,30,30);
   animation: borderPlay ease forwards;
   box-shadow: 0px 100px 150px 1px black;
-  border-bottom: 30px solid rgb(17, 17, 17);
   animation-timeline: view(0% 80%);
   height: 100dvh;
   width: 100dvw;
+  position: relative;
+  z-index: 2;
 }
 
 .info{
@@ -33,7 +34,7 @@ a {
   position: relative;
   font-size: 5em;
   color: rgb(30,30,30);
-  animation: backgroundHighlight 7s 1s forwards;
+  animation: backgroundHighlight 7s 1s ease forwards;
 }
 .name::after{
   content: "";
@@ -80,11 +81,6 @@ a {
 }
 }
 
-.slide-text{
-  font-size: 2em;
-  text-shadow: 4px 2px 2px black;
-}
-
 .arrow {
   animation: arrowAppears 4s 1 forwards, arrowBumps 2s 4s infinite alternate;
   box-sizing: border-box;
@@ -109,55 +105,14 @@ a {
   text-shadow: 5px 5px 2px black;
 }
 
-.bio{
-  width: 100dvw;
-  height: 100dvh
+.segment-list{
+  aspect-ratio: 19/16;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
-.who-what::before{
-    content:"Who";
-    animation: refadein 20s forwards; 
-    pointer-events: none;
-    user-select: none;
-}
-
-.who-what::after{
-  content:" am I?";
-  color: white;
-}
-
-.bio-text{
-  font-size: 2.2em;
-}
-
-.bio-vid{
-  z-index: 1;
-  object-fit: fill;
-  max-width: 600px;
-  max-height: 600px;
-  border-top: 0.1px solid gray;
-  border-left: 0.1px solid gray;
-  border-radius: 20px;
-  box-shadow: 3px 3px 1px 1px black;
-}
-
-.services{
-  height: 100dvh;
-  width: 100dvw
-}
-
-.contact-button{
-  background: transparent;
-  border: 0;
-  color: white;
-  height: 100px;
-  width: 100px;
-  transition: 1s ease;
-  &:hover{
-  transition: 1s ease;
-  height: 120px;
-  width: 120px;
-}
+.segment-list div {
+  scroll-snap-align: start;
 }
 
 /* Frames */
@@ -242,24 +197,11 @@ a {
     }
 }
 
-@keyframes fadeIn {
-  from {opacity:0}
-  to {opacity:1}
-}
-
-@keyframes refadein {
-    0%{opacity: 1; content:'Who';}
-    25%{opacity: 1; content:'Who'; text-decoration: line-through;color: white;text-shadow: none;}
-    50%{opacity: 0; content:'Who'; text-decoration: line-through;color: white;text-shadow: none;}
-    75%{opacity:0; content:'What';}
-    100%{opacity:1; content:'What'; background: linear-gradient(90deg, rgb(13, 202, 240),  rgb(0, 255, 136), rgb(13, 202, 240)); background-clip: text; color: transparent; text-shadow: none;}
-  }
-
 @keyframes backgroundHighlight {
   0%{
     font-size: 5em;
     color: transparent;
-    background-image: linear-gradient(90deg,rgb(255, 255, 255),rgb(0, 255, 191), white 100%);
+    background-image: linear-gradient(90deg, rgb(13, 202, 240),  rgb(0, 255, 136), rgb(13, 202, 240));
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 0% 100%;
@@ -268,7 +210,7 @@ a {
   10% {
     font-size: 5.5em;
     color: transparent;
-    background-image: linear-gradient(90deg,rgb(255, 255, 255),rgb(0, 255, 191), white 100%);
+    background-image: linear-gradient(90deg, rgb(13, 202, 240),  rgb(0, 255, 136), rgb(13, 202, 240));
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 50% 100%;
@@ -278,7 +220,7 @@ a {
   20%{
     font-size: 5.25em;
     color: transparent;
-    background: linear-gradient(90deg,rgb(255, 255, 255), rgb(0, 255, 191), rgb(255, 255, 255));
+    background: linear-gradient(90deg, rgb(13, 202, 240),  rgb(0, 255, 136), rgb(13, 202, 240));
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 25% 100%;
@@ -288,7 +230,7 @@ a {
   30%{
     font-size: 5.75em;
     color: transparent;
-    background: linear-gradient(90deg,rgb(255, 255, 255), rgb(0, 255, 191), rgb(255, 255, 255));
+    background: linear-gradient(90deg, rgb(13, 202, 240),  rgb(0, 255, 136), rgb(13, 202, 240));
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 75% 100%;
@@ -298,7 +240,7 @@ a {
   40%{
     font-size: 5.5em;
     color: transparent;
-    background: linear-gradient(90deg, rgb(255, 255, 255),  rgb(0, 255, 191), rgb(255, 255, 255));
+    background: linear-gradient(90deg, rgb(13, 202, 240),  rgb(0, 255, 136), rgb(13, 202, 240));
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 50% 100%;
@@ -308,7 +250,7 @@ a {
   50%{
     font-size: 6.5em;
     color: transparent;
-    background: linear-gradient(90deg, rgb(255, 255, 255), rgb(0, 255, 191), rgb(255, 255, 255));
+    background: linear-gradient(90deg, rgb(13, 202, 240),  rgb(0, 255, 136), rgb(13, 202, 240));
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 100% 100%;
@@ -318,116 +260,26 @@ a {
   60%{
     font-size: 6em;
     color: transparent;
-    background: linear-gradient(90deg, rgb(255, 255, 255),  rgb(0, 255, 191), rgb(255, 255, 255));
-    background-size: 150% 100%;
+    background: linear-gradient(90deg, rgb(13, 202, 240),  rgb(0, 255, 136), rgb(13, 202, 240));
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 100% 0%;
     background-clip: text;
   }
   70%{
     font-size: 6em;
-    color: transparent;
-    background: linear-gradient(90deg, rgb(255, 255, 255), rgb(0, 255, 191), rgb(255, 255, 255));
-    background-size: 200% 100%;
-    background-clip: text;
   }
   80%{
     font-size: 6em;
-    color: transparent;
-    background: linear-gradient(90deg, rgb(255, 255, 255),  rgb(0, 255, 191), rgb(255, 255, 255));
-    background-size: 250% 100%;
-    background-clip: text;
+    text-shadow: 5px 5px 2px transparent;
   }
   90%{
     font-size: 6em;
-    color: white;
-    background: linear-gradient(90deg, rgb(255, 255, 255),  rgb(0, 255, 191), rgb(255, 255, 255));
-    background-size: 300% 100%;
-    background-clip: text;
-    text-shadow: none;
   }
   100%{
     font-size: 6em;
-    background-color: transparent;
-    color: white;
-    text-shadow: 5px 5px 2px black;
-  }
-}
-
-@keyframes devTextGrow {
-    0%{
-    color: transparent;
-    background-image: linear-gradient(90deg,rgb(255, 255, 255),rgb(0, 255, 191), white 100%, transparent 0%);
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 0% 100%;
+    background-color: white;
     background-clip: text;
-  }
-  10% {
-    color: transparent;
-    background-image: linear-gradient(90deg,rgb(255, 255, 255),rgb(0, 255, 191), white 100%, transparent 0%);
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 50% 100%;
-    background-clip: text;
-  }
-  20%{
-    color: transparent;
-    background: linear-gradient(90deg,rgb(255, 255, 255), rgb(0, 255, 191), rgb(255, 255, 255));
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 25% 100%;
-    background-clip: text;
-  }
-  30%{
-    color: transparent;
-    background: linear-gradient(90deg,rgb(255, 255, 255), rgb(0, 255, 191), rgb(255, 255, 255));
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 75% 100%;
-    background-clip: text;
-  }
-  40%{
-    color: transparent;
-    background: linear-gradient(90deg, rgb(255, 255, 255),  rgb(0, 255, 191), rgb(255, 255, 255));
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 50% 100%;
-    background-clip: text;
-  }
-  50%{
-    color: transparent;
-    background: linear-gradient(90deg, rgb(255, 255, 255),  rgb(0, 255, 191), rgb(255, 255, 255));
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 100% 100%;
-    background-clip: text;
-  }
-  60%{
-    color: transparent;
-    background: linear-gradient(90deg, rgb(255, 255, 255),  rgb(0, 255, 191), rgb(255, 255, 255));
-    background-size: 150% 100%;
-    background-clip: text;
-  }
-  70%{
-    color: transparent;
-    background: linear-gradient(90deg, rgb(255, 255, 255),  rgb(0, 255, 191), rgb(255, 255, 255));
-    background-size: 200% 100%;
-    background-clip: text;
-  }
-  80%{
-    color: transparent;
-    background: linear-gradient(90deg, rgb(255, 255, 255),  rgb(0, 255, 191), rgb(255, 255, 255));
-    background-size: 250% 100%;
-    background-clip: text;
-  }
-  90%{
-    color: white;
-    background: linear-gradient(90deg, rgb(255, 255, 255),  rgb(0, 255, 191), rgb(255, 255, 255));
-    background-size: 300% 100%;
-    background-clip: text;
-    text-shadow: none;
-  }
-  100%{
-    background-color: transparent;
     color: white;
     text-shadow: 5px 5px 2px black;
   }

@@ -16,14 +16,3 @@
     font-size: x-large;
   }
 }
-
-.icon {
-  transition: 1s ease;
-  height: 45px;
-  width: 50px;
-  &:hover {
-    transition: 1s ease;
-    height: 55px;
-    width: 65px;
-  }
-}

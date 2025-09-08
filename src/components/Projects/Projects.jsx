@@ -1,8 +1,8 @@
-import "./carousel.css"
+import "./projects.css"
 
-export const Carousel = () => (
+export const Projects = () => (
 <>
-    <div className="carousel-top-container d-flex flex-column justify-content-center animated">
+    <div className="projects-top-container d-flex flex-column justify-content-center animated">
 
         <p className="protitle text-center">Recent Projects</p>
 
@@ -10,7 +10,7 @@ export const Carousel = () => (
 
             <p className="card-title pb-5">Soundstagram!</p>
 
-            <div className="carousel-container d-flex flex-column justify-content-center align-items-center">
+            <div className="projects-container d-flex flex-column justify-content-center align-items-center">
                 <input type="radio" name="slider" id="photo-1" defaultValue className="d-none"/>
                 <input type="radio" name="slider" id="photo-2" className="d-none"/>
                 <input type="radio" name="slider" id="photo-3" className="d-none"/>

@@ -1,0 +1,32 @@
+.bio{
+  width: 100dvw;
+  height: 100dvh;
+}
+
+.who-what{
+  text-shadow: 0px 0px 0px transparent;
+  transform: translateY(-500px);
+  animation: scrollDown ease forwards;
+  animation-timeline:view(30% 0%);
+}
+
+.bio-text{
+  font-size: 2.2em;
+}
+
+.bio-vid{
+  object-fit: fill;
+  max-width: 600px;
+  max-height: 600px;
+  border-top: 0.1px solid gray;
+  border-left: 0.1px solid gray;
+  border-radius: 20px;
+  box-shadow: 3px 3px 1px 1px black;
+}
+
+/* Frames */
+
+@keyframes scrollDown {
+  0%{transform: translateY(-500px);}
+  100%{transform: translateY(0px);}
+}

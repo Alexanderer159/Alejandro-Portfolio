@@ -1,4 +1,4 @@
-.carousel-top-container{
+.projects-top-container{
   height: 100dvh;
   width: 100dvw;
 }
@@ -10,7 +10,7 @@
   background-clip: text;
 }
 
-.carousel-container {
+.projects-container {
   height: 350px;
   width: 600px;
   transform-style: preserve-3d;

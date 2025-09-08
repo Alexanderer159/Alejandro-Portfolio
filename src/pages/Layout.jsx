@@ -10,7 +10,7 @@ export const Layout = () => {
             <Navbar />
                 <div className="d-flex flex-row">
                     <Outlet />
-                    <Sidebar />
+                    {/* <Sidebar /> */}
                 </div>
             <Footer />
         </div>
