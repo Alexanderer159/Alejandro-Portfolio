@@ -1,4 +1,7 @@
 import "./projects.css"
+import soundstagramLanding from '../../assets/Projects/Soundstagram!/Landing.png'
+import soundstagramSignUp from '../../assets/Projects/Soundstagram!/Signup.png'
+import soundstagramStart from '../../assets/Projects/Soundstagram!/Start.png'
 
 export const Projects = () => (
 <>
@@ -18,13 +21,13 @@ export const Projects = () => (
 
                 <div className="cards">
                     <label className="cardrousel" htmlFor="photo-1" id="pic-1">
-                    <img src="/Projects/Soundstagram!/Landing.png"/>
+                    <img src={soundstagramLanding}/>
                     </label>
                     <label className="cardrousel" htmlFor="photo-2" id="pic-2">
-                    <img src="/Projects/Soundstagram!/Signup.png"/>
+                    <img src={soundstagramSignUp}/>
                     </label>
                     <label className="cardrousel" htmlFor="photo-3" id="pic-3">
-                    <img src="/Projects/Soundstagram!/Start.png"/>
+                    <img src={soundstagramStart}/>
                     </label>
                 </div>
 

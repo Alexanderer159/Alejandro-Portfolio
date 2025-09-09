@@ -1,4 +1,5 @@
 import './bio.css'
+import codingVid from '../../assets/Alejandro/Coding.mp4'
 
 export const Bio = () => {
 
@@ -19,7 +20,7 @@ export const Bio = () => {
               </p>
             </div>
 
-            <video autoPlay muted loop className="bio-vid" src="Alejandro/Coding.mp4" type="video/mp4"/>
+            <video autoPlay muted loop className="bio-vid" src={codingVid} type="video/mp4"/>
          
           </div>
           
