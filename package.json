@@ -1,5 +1,6 @@
 {
   "name": "alejandro-portfolio",
+  "homepage": "https://alexanderer159.github.io/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,10 +8,13 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@lordicon/react": "^1.11.0",
+    "gh-pages": "^6.3.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.8.1"
@@ -26,8 +30,8 @@
     "vite": "^7.1.2"
   },
   "overrides": {
-  "color-convert": "2.0.1",
-  "color-name": "1.1.4",
-  "debug": "4.3.4"
-}
+    "color-convert": "2.0.1",
+    "color-name": "1.1.4",
+    "debug": "4.3.4"
+  }
 }
