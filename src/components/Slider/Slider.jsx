@@ -1,4 +1,6 @@
 import './slider.css'
+import viteIcon from '../../assets/Skills/Vite.png'
+import tailwindIcon from '../../assets/Skills/Tailwind.png'
 
 export const Slider = () => {  
   
@@ -35,7 +37,7 @@ export const Slider = () => {
 		</div>
 
         <div className="slide">
-            <a href="https://tailwindcss.com/"><img src="Skills/Tailwind.png"/></a>
+            <a href="https://tailwindcss.com/"><img src={tailwindIcon}/></a>
 		</div>
 
         <div className="slide">
@@ -51,7 +53,7 @@ export const Slider = () => {
 		</div>
 
         <div className="slide">
-            <a href="https://vite.dev/"><img src="Skills/Vite.png"/></a>
+            <a href="https://vite.dev/"><img src={viteIcon}/></a>
 		</div>
 
         <div className="slide">
@@ -95,7 +97,7 @@ export const Slider = () => {
 		</div>
 
         <div className="slide">
-            <a href="https://tailwindcss.com/"><img src="Skills/Tailwind.png"/></a>
+            <a href="https://tailwindcss.com/"><img src={tailwindIcon} /></a>
 		</div>
 
         <div className="slide">
@@ -111,7 +113,7 @@ export const Slider = () => {
 		</div>
 
         <div className="slide">
-            <a href="https://vite.dev/"><img src="Skills/Vite.png"/></a>
+            <a href="https://vite.dev/"><img src={viteIcon}/></a>
 		</div>
 
         <div className="slide">
