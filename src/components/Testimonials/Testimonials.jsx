@@ -1,4 +1,5 @@
 import './testimonials.css'
+import hansProfile from '../../assets/Testimonials/Hans.png'
 
 export const Testimonials = () => {  
   
@@ -11,7 +12,7 @@ export const Testimonials = () => {
 
             <div className="testi-card d-flex flex-column justify-content-between align-items-center p-3">
 
-                <img src="Testimonials/Hans.png" className="testi-pic my-2"/>
+                <img src={hansProfile} className="testi-pic my-2"/>
                 
                 <p className="testi-name mt-3 mb-0">Hans Christian Aparicio Moreno</p>
                 <p className="testi-jobtitle mb-3"><strong className="emphasis">Senior Full-Stack Developer</strong></p>
