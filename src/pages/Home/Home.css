@@ -23,7 +23,7 @@ a {
 .top {
   background: rgb(30,30,30);
   animation: borderPlay ease forwards;
-  box-shadow: 0px 100px 100px 1px black;
+  box-shadow: 0px 50px 50px 1px black;
   animation-timeline: view(0% 80%);
   height: 100dvh;
   width: 100dvw;
@@ -84,7 +84,7 @@ a {
 }
 
 .buttonWA{
-  background-color: rgb(37, 211, 102);
+  background: linear-gradient(90deg, rgb(37, 211, 102) 1%, rgb(18, 140, 126));
   fill: white;
   color: white;
   border: 0px;

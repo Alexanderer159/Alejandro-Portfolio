@@ -12,11 +12,11 @@
   width: 100dvw;
 }
 
-.inside-service-card{
-  font-size: 3em;
+.service-card-pic{
+  width: 250px;
+  height: fit-content;
 }
 
-.inside-service-card svg{
-  max-width: 250px;
-  max-height: 250px;
+.inside-service-card{
+  font-size: 3em;
 }

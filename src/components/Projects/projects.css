@@ -33,7 +33,7 @@
   max-height: 600px;
   border-radius: 15px;
   object-fit: contain;
-  box-shadow: 4px 4px 10px 1px black;
+  box-shadow: 5px 5px 5px 1px black;
 }
 
 #photo-1:checked ~ .cards #pic-3, #photo-2:checked ~ .cards #pic-1, #photo-3:checked ~ .cards #pic-2 {

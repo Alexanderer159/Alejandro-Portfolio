@@ -1,5 +1,6 @@
 .contact-button{
   background: transparent;
+  filter: drop-shadow(5px 5px 5px rgba(0,0,0,1));
   border: 0;
   color: white;
   height: 100px;
@@ -10,4 +11,8 @@
   height: 120px;
   width: 120px;
 }
+}
+
+.contact-button-text{
+  font-size: 1.2em;
 }
