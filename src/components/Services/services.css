@@ -17,6 +17,46 @@
   height: fit-content;
 }
 
+.design-card{
+  animation: slideRightPic ease forwards;
+  animation-timeline: view(80% 0%);
+}
+
+.cog-pic{
+  animation: roundCog ease forwards;
+  animation-timeline: view(-100%);
+}
+
+.project-card{
+  animation: slideLeftPic ease forwards;
+  animation-timeline: view(80% 0%);
+}
+
 .inside-service-card{
   font-size: 3em;
+}
+
+.cdci-work{
+  animation: slideUpWord ease forwards;
+  animation-timeline: view(80% 0%);
+}
+
+@keyframes roundCog {
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+
+@keyframes slideRightPic{
+  0%{transform: translateX(-1000px);}
+  100%{transform: translateX(0px);}
+}
+
+@keyframes slideLeftPic{
+  0%{transform: translateX(1000px);}
+  100%{transform: translateX(0px);}
+}
+
+@keyframes slideUpWord{
+  0%{transform: translateY(1000px);}
+  100%{transform: translateY(0px);}
 }

@@ -1,0 +1,17 @@
+.route-error{
+    font-size: 5em;
+    color: white;
+}
+
+.go-back-home{
+    color: white;
+    font-size: 2em;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 7px;
+    transition: 1s ease;
+&:hover{
+    transition: 1s ease;
+    font-size: 2.2em;
+}
+}
