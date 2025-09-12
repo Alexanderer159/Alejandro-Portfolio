@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from "react"
 import './Home.css';
 import { Slider } from '../../components/Slider/Slider.jsx';
 import { Card } from '../../components/Card/Card.jsx';
@@ -9,6 +10,31 @@ import { Contact } from '../../components/Contact/Contact.jsx';
 import curriculum from '../../assets/Alejandro/CV-Alejandro-De-Yavorsky.pdf'
 
 export const Home = () => {
+  const [time, setTime] = useState(new Date());
+
+  useEffect(() => {
+
+	const spainTime = new Date().toLocaleString("en-US", {timeZone: "Europe/Madrid",});
+	setTime(new Date(spainTime));
+
+  }, [time]);
+
+  const isAwake = () => {
+
+	const spainTime = new Date().toLocaleString("en-US", {timeZone: "Europe/Madrid",});
+	const spainHour = new Date(spainTime).getHours();
+
+if (spainHour >= 9 && spainHour < 23) {
+
+	  return true;
+	} else {
+	  return false;
+	}};
+
+const handleScroll = (e) => {
+	document.getElementById(e).scrollIntoView({ behavior: "smooth" })
+}
+
   return (
   <>
     <div className="portfolio-container py-5">
@@ -27,7 +53,9 @@ export const Home = () => {
               </div>
               
 
-              <div className="d-flex gap-3 pt-4 mt-4">
+              <div className="d-flex pt-4 mt-4 justify-content-between">
+
+                <div className="d-flex gap-3">
 
                 <a href={curriculum} download="CV-Alejandro-De-Yavorsky.pdf">
                   <button className="buttonCV p-2">
@@ -43,6 +71,17 @@ export const Home = () => {
                     Whatsapp
                   </button>
                 </a>
+
+                </div>
+
+                <div className="time-awake d-flex flex-row gap-2">
+
+                  <p className="m-0">Spain | {time.toLocaleTimeString("en-GB", { timeZone: "Europe/Madrid" })} | </p>
+                  <p className={isAwake() ? "awake" : "asleep"}>I am {isAwake() ? "Awake" : "Asleep"} </p>
+                          
+                </div>
+
+
               </div>
 
               <Slider />
@@ -52,7 +91,7 @@ export const Home = () => {
         </div>
 
         <div className="d-flex justify-content-center animated">
-          <a data-scroll href="#bio" className="arrow">
+          <a data-scroll onClick={() => handleScroll("bio")} className="arrow">
           </a>
         </div>
       </div>

@@ -9,17 +9,15 @@ export const Projects = () => (
 
         <p className="protitle text-center">Recent Projects</p>
 
-        <div className="d-flex flex-column justify-content-center align-items-center">
+        <div className="project-container d-flex flex-column align-items-center justify-content-between">
 
             <p className="card-title pb-5">Soundstagram!</p>
-
-            <div className="projects-container">
 
                 <input type="radio" name="slider" id="photo-1" defaultValue className="d-none"/>
                 <input type="radio" name="slider" id="photo-2" className="d-none"/>
                 <input type="radio" name="slider" id="photo-3" className="d-none"/>
 
-                <div className="cards">
+                <div className="cards d-flex justify-content-center align-items-center">
                     <label className="cardrousel" htmlFor="photo-1" id="pic-1">
                     <img src={soundstagramLanding}/>
                     </label>
@@ -29,9 +27,8 @@ export const Projects = () => (
                     <label className="cardrousel" htmlFor="photo-3" id="pic-3">
                     <img src={soundstagramStart}/>
                     </label>
-                </div>
 
-            </div>
+                </div>
 
             <a href="https://github.com/Alexanderer159/Soundstagram" target="_blank" className="my-5">
                 <p className="learn-more m-0">Learn More!</p>

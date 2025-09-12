@@ -97,8 +97,25 @@ a {
 }
 }
 
+.time-awake{
+  font-size: 2em;
+}
+
+.awake{
+  background: linear-gradient(90deg, rgb(13, 202, 240),rgb(13, 202, 240),  rgb(0, 255, 136));
+  background-clip: text;
+  color: transparent;
+}
+
+.asleep{
+  background: linear-gradient(90deg, rgb(240, 13, 13),  rgb(240, 13, 13),  rgb(119, 0, 255));
+  background-clip: text;
+  color: transparent;
+}
+
 .arrow {
   animation: arrowAppears 4s 1 forwards, arrowBumps 2s 4s infinite alternate;
+  cursor: pointer;
   box-sizing: border-box;
   height: 7vw;
   width: 7vw;
