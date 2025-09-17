@@ -18,7 +18,7 @@
   object-fit: fill;
   max-width: 600px;
   max-height: 600px;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 5px 5px 5px 1px black;
 }
 

@@ -10,19 +10,32 @@ import { Contact } from '../../components/Contact/Contact.jsx';
 import curriculum from '../../assets/Alejandro/CV-Alejandro-De-Yavorsky.pdf'
 
 export const Home = () => {
-  const [time, setTime] = useState(new Date());
+  const [time, setTime] = useState("");
 
   useEffect(() => {
+  const interval = setInterval(() => {
+    const spainTime = new Intl.DateTimeFormat("en-US", {
+      timeZone: "Europe/Madrid",
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+      hour12: false,
+    });
+    setTime(spainTime.format(new Date()));
+  }, 1000);
 
-	const spainTime = new Date().toLocaleString("en-US", {timeZone: "Europe/Madrid",});
-	setTime(new Date(spainTime));
+  return () => clearInterval(interval);
 
-  }, [time]);
+  }, []);
 
   const isAwake = () => {
 
-	const spainTime = new Date().toLocaleString("en-US", {timeZone: "Europe/Madrid",});
-	const spainHour = new Date(spainTime).getHours();
+	const hourFormat = new Intl.DateTimeFormat("en-US", {
+    timeZone: "Europe/Madrid",
+    hour: "numeric",
+    hour12: false,
+  });
+	const spainHour = parseInt(hourFormat.format(new Date()), 10);
 
 if (spainHour >= 9 && spainHour < 23) {
 
@@ -76,7 +89,7 @@ const handleScroll = (e) => {
 
                 <div className="time-awake d-flex flex-row gap-2">
 
-                  <p className="m-0">Spain | {time.toLocaleTimeString("en-GB", { timeZone: "Europe/Madrid" })} | </p>
+                  <p className="m-0">Spain | {time} | </p>
                   <p className={isAwake() ? "awake" : "asleep"}>I am {isAwake() ? "Awake" : "Asleep"} </p>
                           
                 </div>
